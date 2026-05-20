@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NGOMBE | Endlessly Fresh Brewed Perfection</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            animation: marquee 20s linear infinite;
+        }
+        .hero-glass-reflection {
+            background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-fixed-dim": "#c9c7b8",
+                      "on-error-container": "#ffdad6",
+                      "on-surface-variant": "#c0c9c2",
+                      "on-secondary-fixed": "#171e00",
+                      "on-background": "#c6ebd7",
+                      "primary-fixed-dim": "#a1d1b8",
+                      "surface-tint": "#a1d1b8",
+                      "outline-variant": "#414944",
+                      "surface": "#00180e",
+                      "surface-container-highest": "#1a3b2d",
+                      "on-primary-fixed-variant": "#214f3c",
+                      "on-primary-container": "#78a78f",
+                      "surface-container-low": "#002115",
+                      "on-tertiary": "#313127",
+                      "surface-container": "#022518",
+                      "inverse-on-surface": "#153629",
+                      "secondary-container": "#495900",
+                      "primary-fixed": "#bceed3",
+                      "secondary-fixed-dim": "#bbd06f",
+                      "surface-container-lowest": "#00120a",
+                      "on-error": "#690005",
+                      "error": "#ffb4ab",
+                      "on-tertiary-fixed-variant": "#48473c",
+                      "on-secondary-fixed-variant": "#3e4c00",
+                      "on-primary-fixed": "#002114",
+                      "primary-container": "#0b3c2a",
+                      "inverse-primary": "#3a6752",
+                      "outline": "#8a938d",
+                      "secondary-fixed": "#d7ec88",
+                      "error-container": "#93000a",
+                      "surface-dim": "#00180e",
+                      "secondary": "#bbd06f",
+                      "muted-white": "#E5EAF5",
+                      "tertiary-fixed": "#e6e3d4",
+                      "tertiary": "#c9c7b8",
+                      "on-tertiary-container": "#9f9d90",
+                      "surface-container-high": "#0e3022",
+                      "background": "#00180e",
+                      "surface-variant": "#1a3b2d",
+                      "surface-bright": "#1e3f31",
+                      "inverse-surface": "#c6ebd7",
+                      "stark-white": "#FFFFFF",
+                      "on-surface": "#c6ebd7",
+                      "on-secondary": "#2a3400",
+                      "tertiary-container": "#35352b",
+                      "on-primary": "#053826",
+                      "oatmeal-light": "#F7F6F0",
+                      "on-secondary-container": "#bbcf6e",
+                      "primary": "#a1d1b8",
+                      "on-tertiary-fixed": "#1c1c13"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-gap-desktop": "120px",
+                      "margin-desktop": "5%",
+                      "gutter": "1.5rem",
+                      "container-max": "1440px",
+                      "section-gap-mobile": "60px",
+                      "margin-mobile": "20px"
+              },
+              "fontFamily": {
+                      "headline-hero": ["Bebas Neue"],
+                      "headline-card": ["Inter"],
+                      "marquee-text": ["Bebas Neue"],
+                      "body-main": ["Inter"],
+                      "headline-section": ["Bebas Neue"],
+                      "headline-hero-mobile": ["Bebas Neue"],
+                      "label-nav": ["Inter"],
+                      "label-cta": ["Inter"]
+              },
+              "fontSize": {
+                      "headline-hero": ["96px", {"lineHeight": "1.0", "letterSpacing": "0.02em", "fontWeight": "900"}],
+                      "headline-card": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                      "marquee-text": ["36px", {"lineHeight": "1.0", "fontWeight": "700"}],
+                      "body-main": ["15px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                      "headline-section": ["48px", {"lineHeight": "1.2", "letterSpacing": "0.03em", "fontWeight": "700"}],
+                      "headline-hero-mobile": ["42px", {"lineHeight": "1.1", "fontWeight": "900"}],
+                      "label-nav": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                      "label-cta": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-main selection:bg-secondary selection:text-on-secondary">
+<!-- 1. Top Announcement Bar -->
+<div class="w-full bg-[#082B1E] py-2 text-center overflow-hidden">
+<p class="font-label-nav text-label-nav tracking-widest text-on-primary uppercase">
+            ☕ YOUR PERFECT COFFEE AWAITS! — FREE SHIPPING ON ORDERS OVER $50
+        </p>
+</div>
+<!-- 2. Header (Shared Component: TopNavBar) -->
+<header class="sticky top-0 z-50 bg-surface/90 backdrop-blur-md">
+<nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<!-- Brand Logo -->
+<a class="font-headline-section text-headline-section tracking-wider text-primary" href="/">NGOMBE</a>
+<!-- Navigation Links (Desktop) -->
+<div class="hidden lg:flex items-center gap-8">
+<a class="font-label-nav text-label-nav text-secondary font-bold hover:text-secondary transition-all duration-300" href="#">Home ↗</a>
+<a class="font-label-nav text-label-nav text-on-surface hover:text-secondary transition-all duration-300" href="#">Shop ↗</a>
+<a class="font-label-nav text-label-nav text-on-surface hover:text-secondary transition-all duration-300" href="#">Recipe ↗</a>
+<a class="font-label-nav text-label-nav text-on-surface hover:text-secondary transition-all duration-300" href="#">About Us ↗</a>
+<a class="font-label-nav text-label-nav text-on-surface hover:text-secondary transition-all duration-300" href="#">Blog ↗</a>
+<a class="font-label-nav text-label-nav text-on-surface hover:text-secondary transition-all duration-300" href="#">Contact Us ↗</a>
+</div>
+<!-- Action Icons -->
+<div class="flex items-center gap-6">
+<button class="text-primary hover:scale-95 transition-all"><span class="material-symbols-outlined">search</span></button>
+<button class="text-primary hover:scale-95 transition-all"><span class="material-symbols-outlined">person</span></button>
+<button class="flex items-center gap-2 group">
+<span class="material-symbols-outlined text-primary group-hover:scale-95 transition-all">shopping_bag</span>
+<span class="font-label-nav text-label-nav text-on-surface">$0.00</span>
+</button>
+<!-- Mobile Menu Toggle -->
+<button class="lg:hidden text-primary"><span class="material-symbols-outlined">menu</span></button>
+</div>
+</nav>
+</header>
+<main>
+<!-- 3. Hero Section -->
+<section class="relative min-h-[870px] flex items-center overflow-hidden bg-gradient-to-b from-surface-container-low to-surface">
+<!-- Large Background Text -->
+<div class="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none select-none overflow-hidden">
+<h1 class="font-headline-hero text-[12vw] leading-none whitespace-nowrap text-stark-white text-center">
+                    ENDLESSLY FRESH BREWED PERFECTION
+                </h1>
+</div>
+<div class="relative w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Left Content -->
+<div class="lg:col-span-5 z-10 space-y-8">
+<div class="space-y-4">
+<span class="inline-block px-3 py-1 bg-primary-container text-primary text-xs font-bold tracking-[0.2em] uppercase rounded-full">Origin Selected</span>
+<h2 class="font-headline-hero-mobile md:font-headline-hero text-headline-hero-mobile md:text-headline-hero text-on-surface uppercase">
+                            Wake Up to <br/><span class="text-secondary">Excellence.</span>
+</h2>
+<p class="font-body-main text-body-main text-on-surface-variant max-w-md">
+                            Experience the precision of artisanal roasting. Every bean is ethically sourced, scientifically tested, and delivered within 48 hours of roasting for a flavor profile that is unmatched.
+                        </p>
+</div>
+<a class="inline-flex items-center gap-4 bg-secondary text-on-secondary px-8 py-4 rounded-full font-label-cta text-label-cta hover:bg-on-secondary-container transition-all group" href="#">
+                        SHOP NOW
+                        <span class="material-symbols-outlined group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">north_east</span>
+</a>
+</div>
+<!-- Center Product -->
+<div class="lg:col-span-5 relative flex justify-center items-center py-12">
+<!-- Soft Oatmeal Decorative Circle -->
+<div class="absolute w-[80%] aspect-square bg-oatmeal-light/10 rounded-full blur-3xl"></div>
+<div class="absolute w-[60%] aspect-square bg-oatmeal-light rounded-full shadow-2xl"></div>
+<img alt="Signature Iced Macchiato" class="relative z-10 w-full max-w-md drop-shadow-[0_35px_35px_rgba(0,0,0,0.5)] transform hover:scale-105 transition-transform duration-700" data-alt="A premium close-up shot of a sophisticated glass of iced macchiato coffee with thick, creamy white foam on top. The glass has condensation droplets and sits within a minimalist, modern forest green and oatmeal environment. Soft, high-end editorial lighting illuminates the textures of the liquid and foam, creating a grounded yet vibrant morning mood with high contrast." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5qtXzVOem94ytjqYY22xpBm25EcA7wY05kW_ikCAnwbelfE_JnnHVSgCWz0CqU_xs6fCe9YBsAdemSm1qX0iP68kry41ZhcbQpCf8q_4tx-BuawFZLjObPrnNfHz_PkDuoWk7kPm59osjwuj8kO0XX-LGLDN0f5OMuuNZdphqh0gbfzn1gNrRvpcyFNXaxZNmjVmJRUbvkcbHiSYRPKmojZSi4wcOmrC6VI-22IUc39kK7NclSmT-TSoZg2HDm66OlLl5MYnl_oM"/>
+</div>
+<!-- Right Variations -->
+<div class="lg:col-span-2 flex lg:flex-col justify-center gap-6 items-center">
+<div class="group cursor-pointer">
+<div class="w-16 h-16 rounded-full border-2 border-secondary p-1 overflow-hidden transition-transform group-hover:scale-110">
+<img alt="Espresso" class="w-full h-full object-cover rounded-full" data-alt="A small circular thumbnail showing a rich, dark espresso with golden crema in a ceramic cup, set against a dark forest green background to maintain visual consistency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkKzt0NZ2ys2Ls7RGSCzk247VVxRDVn795XWBGuc-sfH00ZwtzmgT_dCdVB3ZUeAQtyb86sGgmkl6APBD_BxtCGvAeV_0a-1Oq02RWFNclLAuRk6cWXnuUdCSQJSCOt38M_NpwZ9Dhmx0etUOqn0bWUJr9RV-gVbXq4ysWYL_NIXVSAt9zJWFTk4rq-Sfhf31UYrE8xQK9aTdA4AC6t_7f79HqcIvk4zOoH0sBxtMdgeMfq0Ffc1kzwslL5wcmyOXeQJwNOuiVidA"/>
+</div>
+</div>
+<div class="group cursor-pointer">
+<div class="w-16 h-16 rounded-full border-2 border-outline p-1 overflow-hidden transition-transform group-hover:scale-110">
+<img alt="Latte" class="w-full h-full object-cover rounded-full" data-alt="A small circular thumbnail showing a smooth caffe latte with delicate latte art on top, maintaining the earthy and organic visual theme of the brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCz4OTos5IXWhXjNyggS9sPUxueMOzyS-q48NPydPKKnNC_n-PAfpjLZe8BfKv9dphTsNZnYrebNiqKUMOsfw160aZ-xzejTKgqII4joirMWyMh-LnqeaKn3OZ7BQPHw1LbSxEwuIjCHgD80pkUw_hE5Gc4caQ8ACZY-uh1z_jzl5CWHpplr6vbbr871gKNEKW5dscUK8RXY4FJ1kTdDvWxXA69vz7S47JuXY8MCZZzMvagHCO1PCOWgpWrYsM5_98QNbgjo9L06I"/>
+</div>
+</div>
+<div class="group cursor-pointer">
+<div class="w-16 h-16 rounded-full border-2 border-outline p-1 overflow-hidden transition-transform group-hover:scale-110">
+<img alt="Cold Brew" class="w-full h-full object-cover rounded-full" data-alt="A small circular thumbnail showing a refreshing cold brew coffee with ice cubes in a clear glass, designed with high-contrast lighting for a premium aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM2rybCe-iQkyn6QynFsdR-BFGhIJVj2vX4pQP_RJtj41IHsnCHVtWyOvUfcau0XnZ0JpCQ632E_rwg2RlxD3TftodGbRfiOpyUKUWrJOEfIE930M9DJMzgdtIvJHqC_7HXFxbsi1UQSjNnBniFnjOCmahx2Kfa1OeiwtY5WzMheh51Jf8M_lYmKrofSsYLUsTri2rnlm7LHC-YbbvwTRM0ayTkg3XrStnYhCGeMuoOCG8XN0GFt3O5maBM95l7oT_IuyFn--7p9s"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Scrolling Marquee -->
+<section class="bg-secondary overflow-hidden py-6 border-y border-on-secondary/10">
+<div class="flex whitespace-nowrap animate-marquee">
+<div class="flex items-center gap-12 font-marquee-text text-marquee-text text-on-secondary uppercase px-6">
+<span>ESPRESSO</span> <span class="material-symbols-outlined">star</span>
+<span>MACCHIATO</span> <span class="material-symbols-outlined">star</span>
+<span>LATTE</span> <span class="material-symbols-outlined">star</span>
+<span>AMERICANO</span> <span class="material-symbols-outlined">star</span>
+<span>COLD BREW</span> <span class="material-symbols-outlined">star</span>
+</div>
+<!-- Duplicate for seamless loop -->
+<div class="flex items-center gap-12 font-marquee-text text-marquee-text text-on-secondary uppercase px-6">
+<span>ESPRESSO</span> <span class="material-symbols-outlined">star</span>
+<span>MACCHIATO</span> <span class="material-symbols-outlined">star</span>
+<span>LATTE</span> <span class="material-symbols-outlined">star</span>
+<span>AMERICANO</span> <span class="material-symbols-outlined">star</span>
+<span>COLD BREW</span> <span class="material-symbols-outlined">star</span>
+</div>
+</div>
+</section>
+<!-- 5. Featured Products -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="space-y-2">
+<h2 class="font-headline-section text-headline-section text-on-surface uppercase">Our Best Sellers</h2>
+<p class="font-body-main text-body-main text-on-surface-variant max-w-lg">Hand-picked selections from the world's most renowned plantations, roasted to unlock their hidden potential.</p>
+</div>
+<a class="text-secondary font-bold font-label-cta uppercase tracking-widest hover:underline decoration-2 underline-offset-8" href="#">View All Products</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Product Card 1 -->
+<div class="group relative bg-surface-container rounded-xl p-6 transition-all hover:bg-surface-container-high">
+<div class="relative aspect-square mb-6 overflow-hidden rounded-lg bg-oatmeal-light flex items-center justify-center">
+<img alt="Ethiopia Yirgacheffe" class="w-[80%] h-auto object-contain transform group-hover:scale-110 transition-transform duration-500" data-alt="A professional product shot of a minimalist coffee bean bag labeled NGOMBE Ethiopia Yirgacheffe, placed against a clean, light oatmeal background. The lighting is soft and directional, highlighting the premium texture of the packaging within the modern earthy design aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuApEqtDjdiQMfwKTr2soVckUw4XEmQGMscV5xo92oTCmtaHL5As3A7MD96JClc-I4oxxDcvpVLbPWomkkFXk3lRyVF4A74RaCsJmhLWCcMAJyvfBB3HIqO_utpdylsBaiLB_Z_gUIb5N-Cy-wYw83GeUAi5gwpEAp03LIM96Ge6yXtDxAHI0EHLja2Cb-eKuSbdDdIfGYWxF2eiYspYF7vhIkzizxaTV9qOUsUcfFePxZf1fF5IA8ofdkZ5DyWUqOrPL2Bik3935V4"/>
+<button class="absolute bottom-4 right-4 w-12 h-12 bg-secondary text-on-secondary rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-card text-headline-card text-on-surface">Ethiopia Yirgacheffe</h3>
+<span class="font-bold text-secondary">$24.00</span>
+</div>
+<p class="font-body-main text-body-main text-on-surface-variant line-clamp-2">Floral notes of jasmine and lemon. A bright, tea-like body for discerning palates.</p>
+<div class="flex items-center gap-1 text-secondary pt-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs text-on-surface-variant ml-2">(48 reviews)</span>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group relative bg-surface-container rounded-xl p-6 transition-all hover:bg-surface-container-high">
+<div class="relative aspect-square mb-6 overflow-hidden rounded-lg bg-oatmeal-light flex items-center justify-center">
+<img alt="Dark Earth Roast" class="w-[80%] h-auto object-contain transform group-hover:scale-110 transition-transform duration-500" data-alt="A high-resolution shot of a signature dark roast coffee bag by NGOMBE, featuring organic textures and a minimalist forest green label. The product is centered on a soft white background, showcasing a premium and efficient design style with natural morning lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu7H0etmyZCSDnLszO3kBWhn2yuhPTKurjCQQjG7q6mqD4WnNSjhlAU2ieWxkk1i4EeDpOXDLlPHuoL9OlXYseJFm5ytvw9bAF8kZH30Ih794_jTo_cD4DLU9i8uDHCHihbSsslY3ZihO5wVvlmZi-_ymOA5g1tLCDwuTyzaYBy7wajOryyK6PK6Mq09lsdCGgtJjs-ggS5lFU9YfFY7X6EJH7N18rJEBEIsTC1Pj6e-F_DsVEC5ZREkYRrz9J16Lu-gBgHhad69w"/>
+<button class="absolute bottom-4 right-4 w-12 h-12 bg-secondary text-on-secondary rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-card text-headline-card text-on-surface">Dark Earth Roast</h3>
+<span class="font-bold text-secondary">$21.50</span>
+</div>
+<p class="font-body-main text-body-main text-on-surface-variant line-clamp-2">Robust, smoky profile with heavy notes of dark chocolate and toasted walnuts.</p>
+<div class="flex items-center gap-1 text-secondary pt-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">star</span>
+<span class="text-xs text-on-surface-variant ml-2">(124 reviews)</span>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group relative bg-surface-container rounded-xl p-6 transition-all hover:bg-surface-container-high">
+<div class="relative aspect-square mb-6 overflow-hidden rounded-lg bg-oatmeal-light flex items-center justify-center">
+<img alt="Mist Cold Brew Blend" class="w-[80%] h-auto object-contain transform group-hover:scale-110 transition-transform duration-500" data-alt="A sophisticated packaging design for NGOMBE Cold Brew blend beans, shown in a studio setting with a clean oatmeal background. The aesthetic reflects high-end editorial layouts with organic coffee bean textures and vibrant lime green accents for a modern feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHdlktBW6BqZ1IsMfd-5yyFdwN-1DKsp1jZFvglL0m3ihulM-uIpGKs05DZbGAtfAA__DyF9CXNYYFQjNyDIkCpFwaVdk9iELnHEAxf-nfclbK5_DmcLTivkAPmf7UIElSgC8cpDrAi2rIKz27qOQS_j1vBrIcaJJVaJBWBMi4hVwry5Iy-qxWTtDlYByojnCdMFH4SdcI5aQx3MGTpU8uKO7-QOd-uGSwdVIf9rDMg4alPe4fTYFMaS2t0JOUg5wKt3sLYlASNy0"/>
+<button class="absolute bottom-4 right-4 w-12 h-12 bg-secondary text-on-secondary rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-card text-headline-card text-on-surface">Mist Cold Brew Blend</h3>
+<span class="font-bold text-secondary">$26.00</span>
+</div>
+<p class="font-body-main text-body-main text-on-surface-variant line-clamp-2">Specifically roasted for long extraction. Smooth, low-acid, with a sweet caramel finish.</p>
+<div class="flex items-center gap-1 text-secondary pt-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs text-on-surface-variant ml-2">(89 reviews)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Brand Story -->
+<section class="bg-surface-container-low py-section-gap-mobile md:py-section-gap-desktop">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<!-- Left Image -->
+<div class="relative group order-2 lg:order-1">
+<div class="absolute -inset-4 border border-secondary/20 rounded-xl translate-x-4 translate-y-4 -z-10 transition-transform group-hover:translate-x-2 group-hover:translate-y-2"></div>
+<img alt="Artisan Brewing" class="rounded-xl shadow-2xl w-full h-[600px] object-cover" data-alt="An artistic, moody photograph of a high-end chrome espresso machine in operation, with steam rising and dark coffee liquid flowing. The setting is a minimalist, modern coffee lab with deep forest green tones and warm, organic wood textures. The atmosphere is one of precision, science, and authentic coffee craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9CRNHcAhhoTVjJO6eAr-05ysJgYs-Gg9oo81Nuyh7MmdYOhvNqbpb-D0n78rjI0ze4BtvdS4aA6CyMflXMC8I4QpvsQMbT6Pc-lVj1pCaS2kzXCfefY2bOBT-TPwDxbd_Vztg6Uxtawfj2JRPR3knqcj6O74tR8eMRdKv5-cLAm_vPEShBNOpBM7-17hhTFmtwIN16q6Jl7pSGCYGh7px5jsZYGXywyaPy4qoYfaTaRXWfRusvWnJ4pXMESwACpjR6pJOqr--VCQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface/80 to-transparent flex items-end p-8 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity">
+<p class="text-stark-white font-label-nav italic">"Precision in every drop, soul in every bean."</p>
+</div>
+</div>
+<!-- Right Content -->
+<div class="space-y-8 order-1 lg:order-2">
+<div class="space-y-4">
+<span class="text-secondary font-headline-card tracking-[0.3em] uppercase">Our Secret</span>
+<h2 class="font-headline-section text-headline-section text-on-surface uppercase leading-tight">
+                                From Farm to Your <br/><span class="text-primary italic">Freshly Brewed Cup</span>
+</h2>
+</div>
+<div class="space-y-6 font-body-main text-body-main text-on-surface-variant leading-relaxed">
+<p>
+                                At NGOMBE, we believe coffee is more than just a morning ritual—it's a sophisticated intersection of agricultural mastery and chemical precision. Our journey begins in the high-altitude regions of East Africa and South America, where we work directly with local farmers to ensure ethical practices and the highest quality yield.
+                            </p>
+<p>
+                                Every batch is small-batch roasted in our laboratory setting, where we monitor thermodynamic profiles to ensure the unique terroir of the bean is preserved. We don't just sell coffee; we deliver a scientifically optimized sensory experience.
+                            </p>
+</div>
+<div class="flex gap-12 pt-4">
+<div>
+<h4 class="text-4xl font-headline-hero text-secondary">100%</h4>
+<p class="text-xs uppercase tracking-widest text-on-surface-variant">Organic Arabica</p>
+</div>
+<div>
+<h4 class="text-4xl font-headline-hero text-secondary">48H</h4>
+<p class="text-xs uppercase tracking-widest text-on-surface-variant">Roast to Delivery</p>
+</div>
+<div>
+<h4 class="text-4xl font-headline-hero text-secondary">12+</h4>
+<p class="text-xs uppercase tracking-widest text-on-surface-variant">Direct Trade Origins</p>
+</div>
+</div>
+<div class="pt-4">
+<a class="inline-flex items-center gap-2 border-b-2 border-secondary pb-1 font-label-cta text-secondary hover:text-on-secondary-container hover:border-on-secondary-container transition-colors" href="#">
+                                READ OUR FULL STORY ↗
+                            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- 7. Footer (Shared Component: Footer) -->
+<footer class="bg-surface-container-highest border-t border-outline-variant/20 pt-section-gap-mobile md:pt-section-gap-desktop pb-8">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-16">
+<!-- Brand Info -->
+<div class="space-y-6">
+<a class="font-headline-section text-headline-section text-secondary" href="#">NGOMBE</a>
+<p class="font-body-main text-body-main text-on-surface-variant">
+                        Precision coffee roasters dedicated to the science of flavor and the art of brewing. Grounded in origin, elevated by craft.
+                    </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface hover:bg-secondary hover:text-on-secondary transition-all" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface hover:bg-secondary hover:text-on-secondary transition-all" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+</a>
+</div>
+</div>
+<!-- Shop Categories -->
+<div>
+<h4 class="font-headline-card text-headline-card text-on-surface mb-6 uppercase tracking-wider">Shop</h4>
+<ul class="space-y-4 font-body-main text-on-surface-variant">
+<li><a class="hover:text-secondary transition-colors" href="#">All Coffee</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Subscriptions</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Equipment</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Merchandise</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Gift Cards</a></li>
+</ul>
+</div>
+<!-- Company/Support -->
+<div>
+<h4 class="font-headline-card text-headline-card text-on-surface mb-6 uppercase tracking-wider">Support</h4>
+<ul class="space-y-4 font-body-main text-on-surface-variant">
+<li><a class="hover:text-secondary transition-colors" href="#">Brewing Guides</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Sustainability</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Shipping &amp; Returns</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Contact</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Wholesale</a></li>
+</ul>
+</div>
+<!-- Newsletter -->
+<div class="space-y-6">
+<h4 class="font-headline-card text-headline-card text-on-surface uppercase tracking-wider">Fresh in your inbox</h4>
+<p class="font-body-main text-body-main text-on-surface-variant">Join our circle for exclusive drops and brewing secrets.</p>
+<form class="relative">
+<input class="w-full bg-transparent border-b border-outline-variant py-3 pr-12 focus:outline-none focus:border-secondary transition-colors font-label-nav text-on-surface" placeholder="YOUR EMAIL ADDRESS" type="email"/>
+<button class="absolute right-0 top-1/2 -translate-y-1/2 text-secondary hover:translate-x-1 transition-transform" type="submit">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</form>
+</div>
+</div>
+<!-- Bottom Copyright -->
+<div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-outline-variant/10 gap-4">
+<p class="font-label-nav text-xs text-on-surface-variant tracking-widest">
+                    © 2024 NGOMBE COFFEE ROASTERS. BREWED WITH PRECISION.
+                </p>
+<div class="flex gap-8 font-label-nav text-xs uppercase tracking-widest text-on-surface-variant">
+<a class="hover:text-secondary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-secondary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Simple FAB for Top of Page or Cart (Contextual) -->
+<button class="fixed bottom-8 right-8 w-16 h-16 bg-secondary text-on-secondary rounded-full shadow-2xl flex items-center justify-center z-40 lg:hidden transform active:scale-95 transition-all" id="cartFAB">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-stark-white text-on-secondary text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center">0</span>
+</button>
+<script>
+        // Micro-interactions and effects
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-xl');
+            } else {
+                header.classList.remove('shadow-xl');
+            }
+        });
+
+        // Parallax simple effect for hero background text
+        window.addEventListener('mousemove', (e) => {
+            const moveX = (e.clientX - window.innerWidth / 2) * 0.01;
+            const moveY = (e.clientY - window.innerHeight / 2) * 0.01;
+            const heroBgText = document.querySelector('.hero-bg-text');
+            if (heroBgText) {
+                heroBgText.style.transform = `translate(${moveX}px, ${moveY}px)`;
+            }
+        });
+    </script>
+</body></html>
